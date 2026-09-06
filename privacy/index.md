@@ -60,10 +60,19 @@ taken down, or never used again; or to be removed from the tagging list. Write t
 below and it will be done. This is not a formality — clips have been withdrawn on request
 before, and the software has a mechanism specifically for retiring one permanently.
 
-## Access tokens
+## Authorisation and access tokens
 
-Tokens for Alternate Worlds' own accounts are held as environment variables on the operator's
-infrastructure, are not committed to source control, and are not in deployed images.
+The operator authorises the software against each platform using that platform's own sign-in
+and permission flow — for example TikTok's OAuth — granting it only the permissions needed to
+publish to, and read back statistics from, Alternate Worlds' own accounts. Authorisation can
+be revoked at any time from within the platform's own settings, which stops the software
+immediately.
+
+(The "no sign-in" above means there is no sign-in for *you*, a viewer or reader. The operator
+does sign in, to his own accounts.)
+
+Tokens are held as environment variables on the operator's infrastructure, are not committed
+to source control, and are not included in deployed images.
 
 ## Retention
 
