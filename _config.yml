@@ -1,3 +1,12 @@
 title: Alternate Worlds
 description: Publishing software for the Alternate Worlds podcast
 theme: jekyll-theme-minimal
+
+# ★ TikTok URL-prefix verification. The signature file must be served byte-for-byte at
+# /alternate-worlds/<name>.txt — Jekyll must not template it, wrap it in a layout, or drop it.
+# Listed explicitly so a future theme or config change cannot quietly stop serving it, which
+# would un-verify the app's Terms and Privacy URLs without any visible error.
+include:
+  - tiktok2Jl91X4mgTCB1f3FFZZXg5uHQfpqFH5I.txt
+keep_files:
+  - tiktok2Jl91X4mgTCB1f3FFZZXg5uHQfpqFH5I.txt
